@@ -1,9 +1,20 @@
-TypeScript Apollo GraphQL Server Demo
+TypeScript Apollo GraphQL Server Search Input Demo
 ===========================
 
-Apollo server是一个提供graphql服务的server，提供的查询界面感觉功能很强大。
+Define a search method with input types.
+
 
 ```
 npm install
 npm run demo
+```
+
+On the playground, try:
+
+```
+{
+  searchBooks(input:{keyword:"ha"}) {
+    title
+  }
+}
 ```
